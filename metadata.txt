@@ -5,12 +5,12 @@
 [general]
 name=GMD Toolkits
 qgisMinimumVersion=3.0
-description=test
+description=This tool is an all-in-one solution for processing, with all models included in this plugin
 version=0.1
 author=Kent Emman
-email=email@gmail.com
+email=kedeleon.psagmd@gmail.com
 
-about=Provide a brief description of the plugin and its purpose.
+about=
 
 tracker=http://bugs
 repository=http://repo
