@@ -32,6 +32,10 @@ __revision__ = '$Format:%H$'
 
 from qgis.core import QgsProcessingProvider
 from .algorithms.utilities.outputchecker import OutputChecker
+from .algorithms.visualization.mvmhousehold import MvmhouseholdsWithPwdMembers
+from .algorithms.visualization.mvmhousing import MvmhousingCharacteristics
+from .algorithms.visualization.mvmlivingalone import MvmseniorCitizensLivingAlone
+from .algorithms.visualization.mvmevacuation import MvmproximityToEvacuationCenters
 import os
 from PyQt5.QtGui import QIcon
 
@@ -57,6 +61,10 @@ class GMDToolkitsProvider(QgsProcessingProvider):
         Loads all algorithms belonging to this provider.
         """
         self.addAlgorithm(OutputChecker()) 
+        self.addAlgorithm(MvmhouseholdsWithPwdMembers())
+        self.addAlgorithm(MvmhousingCharacteristics())
+        self.addAlgorithm(MvmseniorCitizensLivingAlone())
+        self.addAlgorithm(MvmproximityToEvacuationCenters())
         # add additional algorithms here
 
     def id(self):
